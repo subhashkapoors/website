@@ -1,0 +1,52 @@
+$primary-ylw-btn-color: #FFC80A;
+$default-txt-color: #2D4158;
+$default-font-size: 18px;
+$white: #ffffff;
+$btn-radius: 50px;
+$theme-color: #7D6CB9;
+
+@mixin transition-all($property, $duration, $function){
+    transition:$property $duration $function; 
+}
+@mixin btn($btn-radius, $bg-color, $text-color, $font-size, $text-case){
+    border-radius: $btn-radius;
+    background: $bg-color;
+    color: $text-color;
+    font-size: $font-size;
+    text-transform: $text-case;
+    cursor: pointer;
+    font-weight: 600;
+    @include transition-all(all, 0.5s, linear);
+    &:hover{
+        text-decoration: none;
+        outline: none;
+        @include transition-all(all, 0.5s, linear);
+        box-shadow: 0 3px 0px #555;
+    }
+    &:focus{
+       outline: none!important; //override bootstrap's outline property
+    }
+}
+@mixin boxs($radius, $bg-color, $text-color, $font-size, $height, $padding){
+    border-radius: $radius;
+    background: $bg-color;
+    color: $text-color;
+    font-size: $font-size;
+    height: $height;
+    padding: $padding;
+}
+@mixin shdow-box($color, $brdr-width, $style){
+    border-color: $color;
+    border-width: $brdr-width;
+    border-style: $style;
+    box-shadow: 0 0 8px $color;   
+}
+@mixin flex-grid($direction, $justify-content, $align-items){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+
+

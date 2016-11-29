@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AngularApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Student Nest Website</title>
+		<link rel="shortcut icon" type="image/x-icon" href="/assets/images/Favicon-Lotus.png"/>
+		<!--bootstrap 4 alpha-->
+		<link rel="stylesheet" href="assets/stylesheet/css/bootstrap.min.css">
+
+		<!--compass files-->
+		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if IE]-->
+		<link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/stylesheet/css/animate.min.css">
+		<!--app css-->
+		<link rel="stylesheet" href="assets/stylesheet/css/style.css">
+		<link rel="stylesheet" href="assets/stylesheet/css/responsive.css">
+		<script>
+			function initMap() {
+
+				var uluru = {lat:40.742026, lng:-74.004145  };
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 12,
+					center: uluru
+				});
+				var marker = new google.maps.Marker({
+					position: uluru,
+					map: map
+				});
+			}
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZC47LRCl_Pk4SpOsBfFayo7_EVJWu51k&callback=initMap"></script>
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<nav class="nav navigation top-nav-mod fill">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="branding">
+								<a href="index.html"><img src="assets/images/lotuslogo.png" alt="" class="logo"></a>
+							</div>
+							<div class="navigation  mobile-nav float-xs-right">
+								<div class="btn-group">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fa fa-bars" aria-hidden="true"></i>
+									</button>
+									<div class="dropdown-menu">
+										<ul class="nav nav-pills">
+											<li class="nav-item">
+												<a class="nav-link" href="index.html#feature">features</a>
+											</li>
+
+											<li class="nav-item">
+												<a class="nav-link" href="index.html#testimonials">testimonials</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="index.html#news">news</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link active" href="support.html">support</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="user-auth-block float-xs-right">
+								<button class="btn primary-btn yellow-btn login-btn">
+									login
+								</button>
+							</div>
+							
+
+							<ul class="nav nav-pills desktop-nav float-xs-right">
+								<li class="nav-item">
+									<a class="nav-link" href="index.html#feature">features</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="index.html#testimonials">testimonials</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="index.html#news">news</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="support.html">support</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</nav>
+			<section class="section-block support-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h2>How can we assist you?</h2>
+							<p>Fill up this form to contact us if you have any further questions</p>
+							<form>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="exampleInputEmail1">Name</label>
+											<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="exampleInputEmail1">Mobile Number</label>
+											<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="exampleInputEmail1">Email address</label>
+											<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">	
+										<div class="form-group">
+											<label for="exampleTextarea">Message</label>
+											<textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Type the message you wish to send"></textarea>
+										</div>
+									</div>
+								</div>
+
+
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</form>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6">
+
+									<address>
+										<p><strong>CALIFORNIA</strong></p>
+										<p>Stanford co.<br />
+											54 E Pear St.<br />
+											Oklahoma city OK 73102</p>
+										<p><strong>TEL</strong> (877) 412-7766</p>
+										<p><strong>FAX </strong> (877) 412-7766</p>
+									</address>
+
+
+								</div>
+								<div class="col-md-6">
+									<address>
+										<p><strong>CANADA</strong></p>
+										<p>Station 322<br />
+											Ottawa Ontario K1AOB1<br />
+											Canada.</p>
+										<p><strong>TEL</strong> (877) 412-7766</p>
+										<p><strong>FAX </strong> (877) 412-7766</p>
+									</address>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+
+									<address>
+										<p><strong>EMAIL</strong></p>
+										<p>support@studentnest.com</p>
+									</address>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-block map-block">
+				<div id="map"></div>
+			</section>
+			<footer class="primary-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="row">
+								<div class="col-md-4">
+									<span class="footer-logo">
+										<a href="index.html"><img src="assets/images/Resource/logo.png" alt="" class=""></a>
+									</span>
+									<p>
+										It’s so easy – just like having the student and the certified tutor in the same room!
+									</p>
+								</div>
+								<div class="col-md-4">
+									<div class="row">
+										<div class="col-md-6">
+											<ul class="footer-listing">
+												<li class="items">
+													<a href="javascript:void(0);">Company</a>
+												</li>
+												<li class="items">
+													<a href="index.html">About us</a>
+												</li>
+												<li class="items">
+													<a href="index.html">Our team</a>
+												</li>
+												<li class="items">
+													<a href="support.html">Contact</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-md-6">
+											<ul class="footer-listing">
+												<li class="items">
+													<a href="javascript:void(0);">About app</a>
+												</li>
+												<li class="items">
+													<a href="index.html#features">features</a>
+												</li>
+												<li class="items">
+													<a href="index.html#testimonials">testimonials</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 social-wrapper">
+									<div class="social-block">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										</ul>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p class="copyright-text">Copyright © 2016. All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</footer>    
+		</div>
+		<!--jquery lib added-->
+		<script src=assets/javascript/jquery.min.js></script>
+
+		<!--bootstrap 4 alpha-->
+		<script src="assets/javascript/bootstrap.min.js"></script>
+
+		<!--Added our custom js file-->
+		<script src="assets/javascript/ScrollMagic.min.js"></script>
+		<script src="assets/javascript/debug.addIndicators.min.js"></script>
+		<script type="text/javascript" src="assets/javascript/script.js"></script>
+
+	</body>
+</html>
