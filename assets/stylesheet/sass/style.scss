@@ -387,7 +387,15 @@ ul{
 		}
 	} 
 	.card-block {
+		padding: 0;
 		margin-bottom: 20px;
+		a {
+			float: left;
+			width: 100%;
+			height: 100%;
+			padding: 15px;
+			text-decoration: none;
+		}
 	}
 }
 .card-block{
