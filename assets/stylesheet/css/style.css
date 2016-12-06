@@ -136,7 +136,7 @@ ul {
   display: none;
 }
 .navigation.fill {
-  background: #6E5AB1;
+  background: #7B35AA;
   transition: all 0.5s;
 }
 
@@ -154,7 +154,7 @@ ul {
   left: 0;
   width: 100%;
   height: 90vh;
-  background: rgba(110, 90, 177, 0.89);
+  background: rgba(123, 53, 170, 0.89);
 }
 .hero-section .section-content-block .section-title {
   font-size: 50px;
@@ -201,6 +201,11 @@ ul {
   line-height: 28px;
   color: #707894;
   margin-bottom: 65px;
+}
+.section-block.promise-block-mod {
+  opacity: 0;
+  padding-top: 0;
+  margin-top: 100px;
 }
 .section-block.promise-block-mod .box-container-block {
   box-shadow: -1px 1px 0 #eee, -1px 0 0 #eee;
@@ -283,6 +288,7 @@ ul {
 .slider-full-body .section-header {
   position: absolute;
   width: 100%;
+  opacity: 0;
 }
 .slider-full-body .section-content {
   overflow: hidden;
@@ -358,6 +364,7 @@ ul {
 .slider-full-body .slide {
   float: left;
   width: 100%;
+  opacity: 0;
 }
 .slider-full-body .slide img {
   width: 100%;
@@ -383,6 +390,7 @@ ul {
 
 .customer-block {
   padding-top: 0;
+  opacity: 0;
 }
 .customer-block .section-content-block {
   width: 1000px;
@@ -431,6 +439,7 @@ ul {
 
 .news-block {
   padding-top: 25px;
+  opacity: 0;
 }
 .news-block .section-title {
   margin-bottom: 40px;
@@ -440,7 +449,15 @@ ul {
   padding: 0 8px;
 }
 .news-block .card-block {
+  padding: 0;
   margin-bottom: 20px;
+}
+.news-block .card-block a {
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  text-decoration: none;
 }
 
 .card-block {
@@ -510,6 +527,7 @@ ul {
 .secondary-footer .box-container-block {
   background: none;
   margin-top: 35px;
+  opacity: 0;
 }
 .secondary-footer .app-icons {
   width: 170px;
@@ -518,6 +536,9 @@ ul {
 }
 .secondary-footer .app-icons img {
   max-width: 100%;
+}
+.secondary-footer .tab-slide {
+  opacity: 0;
 }
 
 .primary-footer {
@@ -687,7 +708,7 @@ ul {
 }
 
 .map-block {
-  padding-bottom: 0;
+  padding: 0 0 0;
 }
 
 #map {
@@ -695,6 +716,97 @@ ul {
   display: inline-block;
   height: 600px;
   margin-bottom: -7px;
+}
+
+/**********************************************About-us Page ******************************************************/
+.about-us-section {
+  padding: 150px 0 200px;
+}
+.about-us-section h3 {
+  font-size: 38px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 52px;
+  color: #2D4158;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.about-us-section p {
+  font-size: 16px;
+  text-align: left;
+  line-height: 28px;
+  color: #707894;
+  margin-bottom: 24px;
+}
+
+/*************************************************END*********************************************************/
+/**********************************************Team Page ******************************************************/
+.team-about {
+  padding-bottom: 0;
+}
+.team-about p {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.team-section {
+  text-align: center;
+  padding-bottom: 90px;
+}
+.team-section .member-image {
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 40px auto 30px;
+}
+.team-section .member-image.sunpreet {
+  background: url(../../images/sunpreet.png) no-repeat top center;
+}
+.team-section .member-image.arsalan {
+  background: url(../../images/sunpreet.png) no-repeat top center;
+}
+.team-section .card {
+  max-width: 350px;
+  margin: auto;
+  box-shadow: 0px 0px 10px 0px #dedede;
+  border-radius: 2px;
+}
+.team-section .card-block {
+  border: 0;
+  height: 280px;
+}
+.team-section .card-block:hover {
+  background: transparent;
+}
+.team-section .card-block:hover .card-title, .team-section .card-block:hover .card-desc, .team-section .card-block:hover .card-content {
+  color: #7B61D5;
+}
+.team-section .card-block h2 {
+  color: #6e5ab1;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+.team-section .card-block h6 {
+  font-size: 12px;
+  line-height: 17px;
+  color: #969695;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.team-section .card-block p {
+  padding: 15px 20px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+  color: #707894;
+}
+
+/*************************************************END*********************************************************/
+.bx-wrapper img {
+  width: 100%;
 }
 
 @media only screen and (min-width: 1200px) {
