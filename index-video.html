@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AngularApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Student Nest Website</title>
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/Favicon-Lotus.png"/>
+		<!--bootstrap 4 alpha-->
+		<link rel="stylesheet" href="assets/stylesheet/css/bootstrap.min.css">
+
+		<!--compass files-->
+		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if IE]-->
+		<link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/stylesheet/css/animate.min.css">
+		<!--app css-->
+		<link rel="stylesheet" href="assets/stylesheet/css/style.css">
+		<link rel="stylesheet" href="assets/stylesheet/css/responsive.css">
+		<link rel="stylesheet" href="assets/jquery.bxslider/jquery.bxslider.css">
+		<style>
+			.video-wrapper
+			{
+				float:left;
+				width: 100%;
+				position: absolute;
+				top:0;
+				left: 0;
+				overflow: hidden;
+				height: 88vh;
+			}
+			video
+			{
+				float:left;
+				width: 100%;
+			}
+			.hero-section
+			{
+				background: none;
+			}
+			.hero-section .hero-overlay {
+				height: 88vh;
+				z-index: 1;
+/*				background: rgba(110, 90, 177, 0.56);*/
+			}
+			.hero-section .container {
+				width: 960px;
+				max-width: 100%;
+				z-index: 1;
+			}
+		</style>
+	</head>
+	<body data-spy="scroll" data-target="#navbar-scrollspy" data-offset="150">
+		<div class="page-wrapper">
+			<nav class="nav navigation top-nav-mod">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12" id="navbar-scrollspy">
+							<div class="branding">
+								<a href="index.html"><img src="assets/images/lotuslogo.png" alt="" class="logo"></a>
+							</div>
+							<div class="navigation  mobile-nav float-xs-right">
+								<div class="btn-group">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fa fa-bars" aria-hidden="true"></i>
+									</button>
+									<div class="dropdown-menu">
+										<ul class="nav nav-pills">
+											<li class="nav-item">
+												<a class="nav-link" href="#feature">features</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#testimonials">testimonials</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#news">news</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="support.html">support</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="user-auth-block float-xs-right">
+								<button class="btn primary-btn yellow-btn login-btn">
+									login
+								</button>
+							</div>
+
+
+							<ul class="nav nav-pills desktop-nav float-xs-right">
+								<li class="nav-item">
+									<a class="nav-link" href="#feature">features</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="#testimonials">testimonials</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#news">news</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="support.html">support</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</nav>
+			<header class="hero-section">
+				<div class="hero-overlay"></div>
+				<div class="video-wrapper">
+					<video src="assets/images/background-video.mp4" autoplay loop></video> 
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="section-content-block text-sm-center">
+								<h3 class="section-title">
+									Experience an interesting way to learn
+								</h3>
+								<p class="section-meta">
+									It’s easy. It’s online. And fun. 
+								</p>
+								<a href="support.html" class="btn primary-btn yellow-btn demo-request">
+									TRY A DEMO
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="section-block promise-block-mod" id="feature">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="section-content-block">
+								<div class="section-header">
+									<h3 class="section-title">
+										Our Promise
+									</h3>
+									<p class="section-meta">
+										Lotus includes the concept of Depth of Knowledge (DoK) which categorizes questions according to the complexity of thinking required to successfully complete them. 
+									</p>
+								</div>
+								<div class="section-content">
+									<div class="container content-shdw-mod">
+										<div class="row">
+											<div class="col-sm-6 col-md-6 col-lg-4 box-container-block">
+												<span class="icon icon-user"></span>
+												<h3 class="box-title">Learn at your ease</h3>
+												<p class="box-content text-sm-center">
+													Learn a new concept anytime, anywhere from our customized learning plans.
+												</p>
+											</div>
+											<div class="col-sm-6 col-md-6 col-lg-4 box-container-block">
+												<span class="icon icon-responsive"></span>
+												<h3 class="box-title">Work offline</h3>
+												<p class="box-content text-sm-center">
+													Work without internet on your learning plan. It automatically syncs when you are online.
+												</p>
+											</div>
+											<div class="col-sm-6 col-md-6 col-lg-4 box-container-block">
+												<span class="icon icon-zeroeffort"></span>
+												<h3 class="box-title">Zero effort</h3>
+												<p class="box-content text-sm-center">
+													Effortless. Simple. Intuitive. Easy to use even for first time users.
+												</p>
+											</div>
+											<div class="col-sm-6 col-md-6 col-lg-4 box-container-block">
+												<span class="icon icon-adaptive"></span>
+												<h3 class="box-title">Adaptive learning</h3>
+												<p class="box-content text-sm-center">
+													Questions that adapt to your responses because learning is never linear.
+												</p>
+											</div>
+											<div class="col-sm-6 col-md-6 col-lg-4 box-container-block">
+												<span class="icon icon-report"></span>
+												<h3 class="box-title">Reports and analytics</h3>
+												<p class="box-content text-sm-center">
+													Track a student’s progress. Drill down their daily and monthly activities. Everything in real-time.
+												</p>
+											</div>
+											<div class="col-sm-6 col-md-6 col-lg-4 box-container-block">
+												<span class="icon icon-responsive-fully"></span>
+												<h3 class="box-title">Fully responsive</h3>
+												<p class="box-content text-sm-center">
+													100% responsive design allows you to work without any screen adjustment on tablet and mobile.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-block gray-bg-mod slider-full-body" >
+				<div class="section-content-block">
+					<div class="section-header">
+						<h3 class="section-title">
+							Why choose us?
+						</h3>
+						<p class="section-meta">
+							We love technology and we love to create spaces where you enjoy learning. We are thoughtful and passionate. We pride ourselves on being able to do the best in whatever we do. You can trust us with everything. So start learning and growing.     
+						</p>
+					</div>
+					<div class="section-content slider slider-desktop">
+						<div class="showcase-slider-block ">
+							<div class="">
+								<div class="corousel-indicator-block">
+									<ol class="carousel-indicators">
+										<li data-target="#carousel-example-generic active" data-slide-to="0" class="indicator1"></li>
+										<li data-target="#carousel-example-generic" data-slide-to="1" class="indicator2"></li>
+										<li data-target="#carousel-example-generic" data-slide-to="2" class="indicator3"></li>
+									</ol>
+								</div>
+								<div class="carousel-caption-block">
+									<div class="slider-item trigger-slider slider-item1">
+										<h3 class="box-title">Themes that you’ll love</h3>
+										<p class="box-content text-md-left text-sm-center">Choose your color and style with our ‘Jungle’, ‘Cartoon’ or ‘Sports’ theme. Pick your favorite and get started.</p>
+
+									</div>
+									<div class="slider-item slider-item2">
+										<h3 class="box-title">Diverse Assignment feature</h3>
+										<p class="box-content text-md-left text-sm-center">Practice tests, quiz and assignments help in assessing student in different comfort zones and build a holistic learning.
+										</p>
+									</div>
+									<div class="slider-item slider-item3">
+										<h3 class="box-title">Audio hints and guidance </h3>
+										<p class="box-content text-md-left text-sm-center">Guided videos to help you with a particular topic. If you don’t want to read; then hear audio.</p>
+									</div>
+								</div>
+
+
+								<div class="image-corousel">
+									<div class="slide slide1">
+										<img src="assets/images/Resource/laptop.png">
+									</div>
+									<div class="slide slide2">
+										<img src="assets/images/Resource/iPad.png">
+									</div>
+									<div class="slide slide3">
+										<img src="assets/images/Resource/mobile.png">
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="section-content slider slider-mobile">
+						<div class="showcase-slider-block">
+							<div class="">
+								<div class="image-corousel">
+									<div class="slide slide1">
+										<img src="assets/images/Resource/laptop.png">
+									</div>
+									<div class="slide slide2">
+										<img src="assets/images/Resource/iPad.png">
+									</div>
+									<div class="slide slide3">
+										<img src="assets/images/Resource/mobile.png">
+									</div>
+								</div>
+								<div class="carousel-caption-block">
+									<div class="slider-item trigger-slider slider-item1">
+										<h3 class="box-title">Themes that you’ll love</h3>
+										<p class="box-content text-md-left text-sm-center">Choose your color and style with our ‘Jungle’, ‘Cartoon’ or ‘Sports’ theme. Pick your favorite and get started.</p>
+
+									</div>
+									<div class="slider-item slider-item2">
+										<h3 class="box-title">Diverse Assignment feature</h3>
+										<p class="box-content text-md-left text-sm-center">Practice tests, quiz and assignments help in assessing student in different comfort zones and build a holistic learning.
+										</p>
+									</div>
+									<div class="slider-item slider-item3">
+										<h3 class="box-title">Audio hints and guidance </h3>
+										<p class="box-content text-md-left text-sm-center">Guided videos to help you with a particular topic. If you don’t want to read; then hear audio.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-block customer-block" id="testimonials">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="section-content-block">
+								<div class="section-header">
+									<div class="section-title">
+										Some of our Happy Customer
+									</div>
+									<div class="section-meta">
+										There is never a moment when we don’t treasure our valuable partners. Thank you for your wonderful words!  
+									</div>
+								</div>
+								<div class="section-content">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="box-container-block content-shdw-mod">
+													<img src="assets/images/img1.jpg" alt="" class="thumbnail rounded-circle">
+													<h3 class="box-title">Warren Cross</h3>
+													<span class="meta-desc">principal at central united</span>
+													<p class="box-content text-sm-center">
+														WOW! Learning was never this much fun. I really like the offline feature. It helps me work at my ease. Thank you StudentNest.
+													</p> 
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="box-container-block content-shdw-mod">
+													<div class="embed-responsive embed-responsive-16by9 video-mod">
+														<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WO1I-xzPZ-w" allowfullscreen></iframe>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="box-container-block content-shdw-mod">
+													<img src="assets/images/img2.jpg" alt="" class="thumbnail rounded-circle">
+													<h3 class="box-title">Jackson Hampton</h3>
+													<span class="meta-desc">principal at county school </span>
+													<p class="box-content text-sm-center">
+														If there is anything which you guys don’t do? Fun learning, fun exercises! I am in absolute awe with your product. It helped my child. I wish you there for me as well, 10 years back. Thank you StudentNest.
+
+													</p>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="box-container-block content-shdw-mod">
+													<img src="assets/images/img3.jpg" alt="" class="thumbnail rounded-circle">
+													<h3 class="box-title">Jackson Hampton</h3>
+													<span class="meta-desc">principal at county school </span>
+													<p class="box-content text-sm-center">
+														Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elemen.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-content-block partner-block">
+								<div class="section-header">
+									<h4 class="section-title">
+										Our Partner schools
+									</h4>
+									<ul class="partners-listing">
+										<li class="partner-item">
+											<img src="assets/images/partner1.png" alt="">
+										</li>
+										<li class="partner-item">
+											<img src="assets/images/partner2.png" alt="">
+										</li>
+										<li class="partner-item">
+											<img src="assets/images/partner3.png" alt="">
+										</li>  
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>   
+			<section class="section-block news-block" id="news">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="section-content-block">
+								<div class="section-header">
+									<h3 class="section-title">
+										Get an update
+									</h3>
+								</div>
+								<div class="section-content">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-6 col-lg-4">
+												<div class="card-block">
+													<a href="news.html">
+														<span class="card-title">News</span>
+														<span class="card-desc">/ 7th Sep 2016</span>
+														<p class="card-content">
+															How learning has revolutionised with time- e-Learning v/s traditional learning
+														</p> 
+													</a>
+												</div>
+											</div>
+											<div class="col-md-6 col-lg-4">
+												<div class="card-block">
+													<a href="news.html">
+														<span class="card-title">News</span>
+														<span class="card-desc">/ 7th Sep 2016</span>
+														<p class="card-content">
+															There is a fun way to learn those math tricks- Are you game?
+														</p>
+													</a>
+												</div>
+											</div>
+											<div class="col-md-6 col-lg-4">
+												<div class="card-block">
+													<a href="news.html">
+														<span class="card-title">News</span>
+														<span class="card-desc">/ 7th Sep 2016</span>
+														<p class="card-content">
+															What do you want to learn today? Let’s get creative
+
+														</p>
+													</a>
+												</div>
+											</div>
+											<div class="col-md-6 col-lg-4">
+												<div class="card-block">
+													<a href="news.html">
+														<span class="card-title">News</span>
+														<span class="card-desc">/ 7th Sep 2016</span>
+														<p class="card-content">
+															On the Emerging Trend of Adapting Podcasts into TV Shows and Movies
+														</p>
+													</a>
+												</div>
+											</div>
+											<div class="col-md-6 col-lg-4">
+												<div class="card-block">
+													<a href="news.html">
+														<span class="card-title">News</span>
+														<span class="card-desc">/ 7th Sep 2016</span>
+														<p class="card-content">
+															Is CCSS the right standard for every student across America?
+														</p>
+													</a>
+												</div>
+											</div>
+											<div class="col-md-6 col-lg-4">
+												<div class="card-block">
+													<a href="news.html">
+														<span class="card-title">News</span>
+														<span class="card-desc">/ 7th Sep 2016</span>
+														<p class="card-content">
+															How learning has revolutionised with time- e-Learning v/s traditional learning
+														</p>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-block gray-bg-mod secondary-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="section-content-block">
+								<div class="section-content">
+									<div class="container">
+										<div class="row">
+											<div class="col-lg-7">
+												<div class="tab-slide">
+													<img src="assets/images/iPad.png" class="img-fluid" alt="tab">
+												</div>
+											</div>
+											<div class="col-lg-5">
+												<div class="box-container-block">
+													<h3 class="box-title">Use lotus on tablets!</span>
+													<p class="box-content">
+														<a href="" class="app-icons app-ios">
+															<img src="assets/images/ios-icon.png" alt="download ios app" class="img-fluid">
+														</a>
+														<a href="" class="app-icons app-adroid">
+															<img src="assets/images/android-icon.png" alt="download ios app" class="img-fluid">
+														</a>
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="primary-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="row">
+								<div class="col-md-4">
+									<span class="footer-logo">
+										<a href="index.html"><img src="assets/images/Resource/logo.png" alt="" class=""></a>
+									</span>
+									<p>
+										It’s so easy – just like having the student and the certified tutor in the same room!
+									</p>
+								</div>
+								<div class="col-md-4">
+									<div class="row">
+										<div class="col-md-6">
+											<ul class="footer-listing">
+												<li class="items">
+													<a href="javascript:void(0);">Company</a>
+												</li>
+												<li class="items">
+													<a href="about-us.html">About us</a>
+												</li>
+												<li class="items">
+													<a href="team.html">Our team</a>
+												</li>
+												<li class="items">
+													<a href="support.html">Contact</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-md-6">
+											<ul class="footer-listing">
+												<li class="items">
+													<a href="javascript:void(0);">About app</a>
+												</li>
+												<li class="items">
+													<a href="#features">features</a>
+												</li>
+												<li class="items">
+													<a href="#testimonials">testimonials</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 social-wrapper">
+									<div class="social-block">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+										</ul>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p class="copyright-text">Copyright © 2016. All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</footer>      
+		</div>
+		<!--jquery lib added-->
+		<script src=assets/javascript/jquery.min.js></script>
+
+		<!--bootstrap 4 alpha-->
+		<script src="assets/javascript/bootstrap.min.js"></script>
+
+		<!--Added our custom js file-->
+		<script src="assets/javascript/ScrollMagic.min.js"></script>
+		<script src="assets/javascript/debug.addIndicators.min.js"></script>
+		<script src="assets/jquery.bxslider/jquery.bxslider.min.js"></script>
+		<script>
+$(document).ready(function (){
+	 $('.bxslider').bxSlider();
+	$(window).scroll(function(){
+		var scroll = $(window).scrollTop();
+		if(screen.width < 1100)
+		{
+			if (scroll>0)
+			{
+				$(".navigation").addClass("fill");
+
+			}
+			else
+			{
+				$(".navigation").removeClass("fill");
+			}
+		}
+		else{
+			if (scroll>100)
+			{
+				$(".navigation").addClass("fill");
+
+			}
+			else
+			{
+				$(".navigation").removeClass("fill");
+			}	
+		}
+	});
+
+
+
+	/*-----------------ScrollMAgic------------------------------------------*/
+	var controller = new ScrollMagic.Controller();
+	if(screen.width > 1100)
+	{
+
+		var windowheight = $(window).height();
+		var indicator_duration = $(".slider-full-body").height() - (windowheight) ;
+		var duration = $(".slider-full-body").height() - windowheight;
+		var sliderheight = $(".slider-item").height();
+		var scene1 = new ScrollMagic.Scene({triggerElement: ".trigger-slider", duration: duration})
+		.setPin(".image-corousel")
+		.setClassToggle(".image-corousel", "triggered")
+		.addTo(controller);
+		var scene2 = new ScrollMagic.Scene({triggerElement: ".trigger-slider", duration: indicator_duration})
+		.setPin(".carousel-indicators")
+		.setClassToggle(".carousel-indicators", "active")
+		.addTo(controller);
+		var scene3 = new ScrollMagic.Scene({triggerElement: ".slider-item1", duration: sliderheight})
+		.setClassToggle(".indicator1", "active")
+		.addTo(controller);
+		var scene4 = new ScrollMagic.Scene({triggerElement: ".slider-item2", duration: sliderheight})
+		.setClassToggle(".indicator2", "active")
+		.addTo(controller);
+		var scene5 = new ScrollMagic.Scene({triggerElement: ".slider-item3",duration: sliderheight})
+		.setClassToggle(".indicator3", "active")
+		.addTo(controller);
+	}	
+	//End ScrollMAgic
+
+	/*--------------------ScrollTo Section Scrolling *****************************/
+
+	// Add smooth scrolling to all links
+	$(".nav a, .footer-listing a").on('click', function(event) {
+		$(".nav a, .footer-listing a").removeClass("active");
+		$(this).addClass("active");
+
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+
+			// Store hash
+			var hash = this.hash;
+
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+				scrollTop: ($(hash).offset().top - 110)
+			}, 1000, function(){
+
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			});
+		} // End if
+	});
+	//End
+//	var videoHeight = $("video").height();
+//	$(".hero-overlay").height(videoHeight);
+});
+
+
+//Hero overlay height
+		</script>
+		<script>
+			$(document).ready(function(){
+				$(".hero-section .section-content-block").addClass("animated fadeIn");
+				$(window).scroll(function(){
+					var scroll = ($(window).scrollTop())+500;
+					var pageOffsetPromise = $(".promise-block-mod").offset().top;
+					var pageOffsetSlider = $(".slider-full-body").offset().top;
+					var pageOffsetCustomers = $(".customer-block").offset().top;
+					var pageOffsetNews = $(".news-block").offset().top;
+					var pageOffsetCorousel = $(".image-corousel").offset().top;
+					var pageOffsetFooter = $(".secondary-footer").offset().top;
+					if (scroll > pageOffsetPromise)
+						{
+							$(".promise-block-mod").addClass("animated fadeIn");
+						}
+					if (scroll > pageOffsetSlider)
+						{
+							$(".slider-full-body .section-header").addClass("animated fadeIn");
+							$(".image-corousel .slide").addClass("animated fadeInLeft");
+						}
+					if (scroll > pageOffsetCustomers)
+						{
+							$(".customer-block").addClass("animated fadeIn");
+						}
+					if (scroll > pageOffsetNews)
+						{
+							$(".news-block").addClass("animated fadeIn");
+						}
+					if (scroll > pageOffsetFooter)
+						{
+							$(".tab-slide").addClass("animated fadeInUp");
+							$(".box-container-block").addClass("animated fadeInUp");
+						}
+
+					
+				})
+			});
+		
+		</script>
+	</body>
+</html>
