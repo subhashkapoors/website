@@ -720,9 +720,14 @@ ul{
 		{
 			background: url(../../images/sunpreet.png) no-repeat top center;
 		}
-		&.arsalan
+		&.monica
 		{
-			background: url(../../images/sunpreet.png) no-repeat top center;
+			background: url(../../images/monica.jpg) no-repeat top center;
+			background-size: 140px;
+		}
+		&.sushil
+		{
+			background: url(../../images/sushil.jpg) no-repeat top center;
 		}
 	}
 	.card
@@ -731,6 +736,10 @@ ul{
 		margin: auto;
 		box-shadow: 0px 0px 10px 0px #dedede;
 		border-radius: 2px;
+		&:hover
+		{
+			box-shadow: 0px 0px 30px 0px #dedede;
+		}
 	}
 	.card-block
 	{

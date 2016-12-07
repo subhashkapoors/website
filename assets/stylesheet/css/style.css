@@ -764,14 +764,21 @@ ul {
 .team-section .member-image.sunpreet {
   background: url(../../images/sunpreet.png) no-repeat top center;
 }
-.team-section .member-image.arsalan {
-  background: url(../../images/sunpreet.png) no-repeat top center;
+.team-section .member-image.monica {
+  background: url(../../images/monica.jpg) no-repeat top center;
+  background-size: 140px;
+}
+.team-section .member-image.sushil {
+  background: url(../../images/sushil.jpg) no-repeat top center;
 }
 .team-section .card {
   max-width: 350px;
   margin: auto;
   box-shadow: 0px 0px 10px 0px #dedede;
   border-radius: 2px;
+}
+.team-section .card:hover {
+  box-shadow: 0px 0px 30px 0px #dedede;
 }
 .team-section .card-block {
   border: 0;

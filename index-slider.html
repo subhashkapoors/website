@@ -30,8 +30,13 @@
 				z-index: 0;
 			}
 			.hero-section .hero-overlay {
-				height: 88.2vh;
+				height: 90vh;
 				z-index: 1;
+			}
+			.bx-wrapper
+			{
+				height: 90vh;
+				overflow: hidden;
 			}
 			.bx-wrapper .bx-viewport
 			{
@@ -581,7 +586,9 @@
 		<script>
 $(document).ready(function (){
 	 $('.bxslider').bxSlider({
-		 auto:true
+		 auto:true,
+		 controls: false,
+		 pager:false
 	 });
 	$(window).scroll(function(){
 		var scroll = $(window).scrollTop();
