@@ -20,7 +20,47 @@
 		<link rel="stylesheet" href="assets/stylesheet/css/style.css">
 		<link rel="stylesheet" href="assets/stylesheet/css/responsive.css">
 		<link rel="stylesheet" href="assets/jquery.bxslider/jquery.bxslider.css">
-		
+		<style>
+			.hero-section
+			{
+				background: none;
+			}
+			.bxslider-wrapper {
+				position: absolute;
+				z-index: 0;
+			}
+			.hero-section .hero-overlay {
+				height: 90vh;
+				z-index: 1;
+			}
+			.bx-wrapper
+			{
+				height: 90vh;
+				overflow: hidden;
+			}
+			.bx-wrapper .bx-viewport
+			{
+				border:0;
+			}
+			.hero-section .container {
+				width: 960px;
+				max-width: 100%;
+				z-index: 1;
+			}
+
+			.bx-wrapper .bx-pager.bx-default-pager a {
+				background:#7B35AA;
+				width: 15px;
+				height: 15px;
+				border-radius: 10px;
+			}
+			.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+				background: #ffc80a;
+			}
+			.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+				bottom: -45px;
+			}
+		</style>
 	</head>
 	<body data-spy="scroll" data-target="#navbar-scrollspy" data-offset="150">
 		<div class="page-wrapper">
@@ -83,6 +123,14 @@
 			</nav>
 			<header class="hero-section">
 				<div class="hero-overlay"></div>
+				<div class="bxslider-wrapper">
+					<ul class="bxslider">
+					  <li><img src="assets/images/background-image.png" /></li>
+					  <li><img src="assets/images/background-image2.png" /></li>
+					  <li><img src="assets/images/background-image3.png" /></li>
+					  <li><img src="assets/images/background-image4.png" /></li>
+					</ul>  
+				</div>
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
