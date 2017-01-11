@@ -157,13 +157,5 @@
     float: none;
   }
 }
-@media only screen and (max-height:700px)
-{
-	.slider-full-body {
-		margin-bottom: 100px;
-	}
-	.slider-full-body:after {
-		display: none;
-	}
-}
+
 /*# sourceMappingURL=responsive.css.map */

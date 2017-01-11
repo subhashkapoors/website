@@ -21,16 +21,36 @@
 		<link rel="stylesheet" href="assets/stylesheet/css/responsive.css">
 		<script>
 			function initMap() {
-
-				var uluru = {lat:40.742026, lng:-74.004145  };
+				var locations = [
+				  ['Stanford co. 54 E Pear St. Oklahoma city OK 73102', 35.440938, -97.365822],
+				  ['Station 322 Ottawa Ontario K1AOB1 Canada.', 45.340800, -75.914786]
+				];
+				var uluru = {lat:35.440938, lng:-97.365822  };
 				var map = new google.maps.Map(document.getElementById('map'), {
-					zoom: 12,
+					zoom: 4,
 					center: uluru
 				});
 				var marker = new google.maps.Marker({
 					position: uluru,
 					map: map
 				});
+				var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
 			}
 		</script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZC47LRCl_Pk4SpOsBfFayo7_EVJWu51k&callback=initMap"></script>
@@ -202,10 +222,10 @@
 													<a href="javascript:void(0);">Company</a>
 												</li>
 												<li class="items">
-													<a href="index.html">About us</a>
+													<a href="about-us.html">About us</a>
 												</li>
 												<li class="items">
-													<a href="index.html">Our team</a>
+													<a href="team.html">Our team</a>
 												</li>
 												<li class="items">
 													<a href="support.html">Contact</a>

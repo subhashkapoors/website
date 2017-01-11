@@ -19,7 +19,38 @@
 		<!--app css-->
 		<link rel="stylesheet" href="assets/stylesheet/css/style.css">
 		<link rel="stylesheet" href="assets/stylesheet/css/responsive.css">
-
+		<link rel="stylesheet" href="assets/jquery.bxslider/jquery.bxslider.css">
+		<style>
+			.video-wrapper
+			{
+				float:left;
+				width: 100%;
+				position: absolute;
+				top:0;
+				left: 0;
+				overflow: hidden;
+				height: 88vh;
+			}
+			video
+			{
+				float:left;
+				width: 100%;
+			}
+			.hero-section
+			{
+				background: none;
+			}
+			.hero-section .hero-overlay {
+				height: 88vh;
+				z-index: 1;
+/*				background: rgba(110, 90, 177, 0.56);*/
+			}
+			.hero-section .container {
+				width: 960px;
+				max-width: 100%;
+				z-index: 1;
+			}
+		</style>
 	</head>
 	<body data-spy="scroll" data-target="#navbar-scrollspy" data-offset="150">
 		<div class="page-wrapper">
@@ -81,7 +112,10 @@
 				</div>
 			</nav>
 			<header class="hero-section">
-				<div class="hero-overlay"></div>    
+				<div class="hero-overlay"></div>
+				<div class="video-wrapper">
+					<video src="assets/images/background-video.mp4" autoplay loop></video> 
+				</div>
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -132,9 +166,9 @@
 											</div>
 											<div class="col-sm-6 col-md-6 col-lg-4 box-container-block">
 												<span class="icon icon-zeroeffort"></span>
-												<h3 class="box-title">Zero effort</h3>
+												<h3 class="box-title">Diverse Assignments</h3>
 												<p class="box-content text-sm-center">
-													Effortless. Simple. Intuitive. Easy to use even for first time users.
+													Practice tests, quiz and assignments help in assessing student in different comfort zones and build a holistic learning.
 												</p>
 											</div>
 											<div class="col-sm-6 col-md-6 col-lg-4 box-container-block">
@@ -152,10 +186,10 @@
 												</p>
 											</div>
 											<div class="col-sm-6 col-md-6 col-lg-4 box-container-block">
-												<span class="icon icon-responsive-fully"></span>
-												<h3 class="box-title">Fully responsive</h3>
+												<span class="icon icon-video-counsel"></span>
+												<h3 class="box-title">Video Counselling</h3>
 												<p class="box-content text-sm-center">
-													100% responsive design allows you to work without any screen adjustment on tablet and mobile.
+													Get in touch with trained and credible counsellors for anything and everything.
 												</p>
 											</div>
 										</div>
@@ -165,6 +199,17 @@
 						</div>
 					</div>
 				</div>
+			</section>
+			<section class="section-block support-tutor-block" id="support-tutor">
+				
+					
+						<img src="assets/images/Resource/support.png" class="img-responsive">
+						<div class="col-sm-6 pull-right">
+							<h3 class="section-title">Stuck somewhere?</h3>
+							<p  class="section-meta">Our awesome team of online tutors are here to assist you 24x7. Take help from our live tutorial support and get unstuck.</p>
+						</div>
+					
+				
 			</section>
 			<section class="section-block gray-bg-mod slider-full-body" >
 				<div class="section-content-block">
@@ -290,10 +335,10 @@
 											<div class="col-md-6">
 												<div class="box-container-block content-shdw-mod">
 													<img src="assets/images/img2.jpg" alt="" class="thumbnail rounded-circle">
-													<h3 class="box-title">Jackson Hampton</h3>
+													<h3 class="box-title">Lolita Fuller</h3>
 													<span class="meta-desc">principal at county school </span>
 													<p class="box-content text-sm-center">
-														If there is anything which you guys don’t do? Fun learning, fun exercises! I am in absolute awe with your product. It helped my child. I wish you there for me as well, 10 years back. Thank you StudentNest.
+														Murrell's Farm and Boys Group Home utilized Studentness for two of our sites this past summer.  It was a great educational tool that was easy to utilize and surprisingly most of the youth seemed to like using it and they stated it was very easy once logged in...
 
 													</p>
 												</div>
@@ -478,10 +523,10 @@
 													<a href="javascript:void(0);">Company</a>
 												</li>
 												<li class="items">
-													<a href="index.html">About us</a>
+													<a href="about-us.html">About us</a>
 												</li>
 												<li class="items">
-													<a href="index.html">Our team</a>
+													<a href="team.html">Our team</a>
 												</li>
 												<li class="items">
 													<a href="support.html">Contact</a>
@@ -533,8 +578,10 @@
 		<!--Added our custom js file-->
 		<script src="assets/javascript/ScrollMagic.min.js"></script>
 		<script src="assets/javascript/debug.addIndicators.min.js"></script>
+		<script src="assets/jquery.bxslider/jquery.bxslider.min.js"></script>
 		<script>
 $(document).ready(function (){
+	 $('.bxslider').bxSlider();
 	$(window).scroll(function(){
 		var scroll = $(window).scrollTop();
 		if(screen.width < 1100)
@@ -620,8 +667,51 @@ $(document).ready(function (){
 		} // End if
 	});
 	//End
+//	var videoHeight = $("video").height();
+//	$(".hero-overlay").height(videoHeight);
 });
 
+
+//Hero overlay height
+		</script>
+		<script>
+			$(document).ready(function(){
+				$(".hero-section .section-content-block").addClass("animated fadeIn");
+				$(window).scroll(function(){
+					var scroll = ($(window).scrollTop())+500;
+					var pageOffsetPromise = $(".promise-block-mod").offset().top;
+					var pageOffsetSlider = $(".slider-full-body").offset().top;
+					var pageOffsetCustomers = $(".customer-block").offset().top;
+					var pageOffsetNews = $(".news-block").offset().top;
+					var pageOffsetCorousel = $(".image-corousel").offset().top;
+					var pageOffsetFooter = $(".secondary-footer").offset().top;
+					if (scroll > pageOffsetPromise)
+						{
+							$(".promise-block-mod").addClass("animated fadeIn");
+						}
+					if (scroll > pageOffsetSlider)
+						{
+							$(".slider-full-body .section-header").addClass("animated fadeIn");
+							$(".image-corousel .slide").addClass("animated fadeInLeft");
+						}
+					if (scroll > pageOffsetCustomers)
+						{
+							$(".customer-block").addClass("animated fadeIn");
+						}
+					if (scroll > pageOffsetNews)
+						{
+							$(".news-block").addClass("animated fadeIn");
+						}
+					if (scroll > pageOffsetFooter)
+						{
+							$(".tab-slide").addClass("animated fadeInUp");
+							$(".box-container-block").addClass("animated fadeInUp");
+						}
+
+					
+				})
+			});
+		
 		</script>
 	</body>
 </html>

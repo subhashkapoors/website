@@ -25,6 +25,13 @@ ul{
 	text-transform: uppercase;
 	margin-bottom:15px;
 }
+.icon-video-counsel
+{
+	background: url(../../images/Resource/video-counseling.svg) no-repeat top center;
+    width: 60px;
+    height: 44px;
+    margin: 25px 0 15px;
+}
 //student nest
 .navigation{
 	.nav-link{
@@ -77,9 +84,11 @@ ul{
 	.mobile-nav{display: none;}
 	&.fill
 	{
-		background: #6E5AB1;
+		background: #7B35AA;
 		transition: all 0.5s;
+		//		    background: #7b35aa;
 	}
+
 }
 .hero-section{
 	background: url('../../images/background-image.png') center 0px / cover no-repeat;
@@ -92,7 +101,7 @@ ul{
 		left: 0;
 		width: 100%;
 		height: 90vh;
-		background: rgba(110,90,177,0.89);
+		background: rgba(123, 53, 170, 0.89);
 	}
 	.section-content-block{
 		.section-title{
@@ -118,6 +127,7 @@ ul{
 	padding: 100px 0 90px;
 	.section-content-block{
 		.section-header{
+
 			@include flex-grid(column, center, center);
 			.section-title{
 				font-size: 38px;
@@ -143,6 +153,9 @@ ul{
 		}
 	}
 	&.promise-block-mod{
+		opacity: 0;
+		padding-top: 0;
+		margin-top: 100px;
 		.box-container-block{
 			box-shadow: -1px 1px 0 #eee, -1px 0 0 #eee;
 			height: 285px;
@@ -203,9 +216,10 @@ ul{
 	display:block;
 	width: 100%;
 	padding-bottom: 0;
+
 	&:after
 	{
-		    content: "";
+		content: "";
 		background: #fff;
 		width: 100%;
 		height: 100%;
@@ -213,10 +227,11 @@ ul{
 		z-index: 0;
 		margin-top: -128px;
 	}
-	
+
 	.section-header{
 		position: absolute;
 		width: 100%;  
+		opacity: 0;
 	}
 	.section-content{
 		overflow: hidden;
@@ -236,7 +251,7 @@ ul{
 		{
 			height: 70vh;
 			max-width: 440px;
-			    padding-top: 12%;
+			padding-top: 12%;
 			h3
 			{
 				font-size: 30px;
@@ -289,8 +304,9 @@ ul{
 		float: left;
 		width: 60%;
 		position: relative;
-//		height: 690px;
-    	overflow: hidden;
+		//		height: 690px;
+		overflow: hidden;
+
 		&.fixed
 		{
 			position: fixed;
@@ -301,6 +317,7 @@ ul{
 	.slide{
 		float: left;
 		width: 100%;
+		opacity: 0;
 		img{width:100%;}
 	}
 	.slide2 {
@@ -325,6 +342,7 @@ ul{
 }
 .customer-block{
 	padding-top: 0;
+	opacity: 0;
 	.section-content-block
 	{
 		width: 1000px;
@@ -377,6 +395,7 @@ ul{
 }
 .news-block{
 	padding-top: 25px;
+	opacity: 0;
 	.section-title{
 		margin-bottom: 40px;
 	}
@@ -455,12 +474,17 @@ ul{
 	.box-container-block{
 		background: none;
 		margin-top: 35px;
+		opacity: 0;
 	}
 	.app-icons{
 		width:170px;
 		margin-right: 20px;
 		display: inline-block;
 		img{max-width:100%;}
+	}
+	.tab-slide
+	{
+		opacity: 0;
 	}
 }
 .primary-footer
@@ -646,13 +670,144 @@ ul{
 		}
 	}
 }
-.map-block{padding-bottom: 0;}
+.map-block{padding:0 0 0;}
 #map
 {
 	width:100%;
 	display: inline-block;
 	height: 600px;
 	margin-bottom: -7px;
+}
+
+/**********************************************About-us Page ******************************************************/
+.about-us-section
+{
+	padding: 150px 0 200px;
+	h3
+	{
+		font-size: 38px;
+		font-weight: 500;
+		text-align: center;
+		line-height: 52px;
+		color: #2D4158;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 16px;
+		text-align: left;
+		line-height: 28px;
+		color: #707894;
+		margin-bottom: 24px;
+	}
+}
+
+/*************************************************END*********************************************************/
+
+/**********************************************Team Page ******************************************************/
+.team-about
+{
+	padding-bottom: 0;
+	p{ text-align: center; margin-bottom: 65px; }
+}
+.team-section
+{
+	text-align: center;
+	padding-bottom: 90px;
+	.member-image
+	{
+		display: inline-block;
+		width: 140px;
+		height: 140px;
+		border-radius: 100%;
+		overflow: hidden;
+		margin: 40px auto 30px;
+
+		&.sunpreet
+		{
+			background: url(../../images/sunpreet.png) no-repeat top center;
+		}
+		&.monica
+		{
+			background: url(../../images/monica.jpg) no-repeat top center;
+			background-size: 140px;
+		}
+		&.sushil
+		{
+			background: url(../../images/sushil.jpg) no-repeat top center;
+		}
+	}
+	.card
+	{
+		max-width: 350px;
+		margin: auto;
+		box-shadow: 0px 0px 10px 0px #dedede;
+		border-radius: 2px;
+		&:hover
+		{
+			box-shadow: 0px 0px 30px 0px #dedede;
+		}
+	}
+	.card-block
+	{
+		border: 0;
+		height: 280px;
+		&:hover
+		{
+			background: transparent;
+			.card-title, .card-desc, .card-content
+			{
+				color: #7B61D5;
+			}
+		}
+		h2{
+			color: #6e5ab1;	
+			font-size: 20px;
+			line-height: 27px;
+			color: #000000;
+		}
+		h6
+		{
+			font-size: 12px;
+			line-height: 17px;
+			color: #969695;
+			margin-bottom: 15px;
+			text-transform: uppercase;
+		}
+		p{
+			padding: 15px 20px;
+			font-size: 16px;
+			text-align: center;
+			line-height: 25px;
+			color: #707894;
+		}
+	}
+}
+
+/*************************************************END*********************************************************/
+.support-tutor-block
+{
+	padding-bottom: 0;
+	img{width: 50%;}
+	.section-title
+	{
+		padding-top: 65px;
+		font-size: 38px;
+		font-weight: 500;
+		line-height: 52px;
+		color: #2D4158;
+	}
+	.section-meta {
+		max-width: 480px;
+		font-size: 16px;
+		line-height: 28px;
+		color: #707894;
+		margin-bottom: 65px;
+	}
+}
+.bx-wrapper img
+{
+	width: 100%;
 }
 @media only screen and (min-width: 1200px){
 	.container {
