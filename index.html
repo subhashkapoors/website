@@ -20,7 +20,37 @@
 		<link rel="stylesheet" href="assets/stylesheet/css/style.css">
 		<link rel="stylesheet" href="assets/stylesheet/css/responsive.css">
 		<link rel="stylesheet" href="assets/jquery.bxslider/jquery.bxslider.css">
-		
+		<style>
+			.video-wrapper
+			{
+				float:left;
+				width: 100%;
+				position: absolute;
+				top:0;
+				left: 0;
+				overflow: hidden;
+				height: 88vh;
+			}
+			video
+			{
+				float:left;
+				width: 100%;
+			}
+			.hero-section
+			{
+				background: none;
+			}
+			.hero-section .hero-overlay {
+				height: 88vh;
+				z-index: 1;
+/*				background: rgba(110, 90, 177, 0.56);*/
+			}
+			.hero-section .container {
+				width: 960px;
+				max-width: 100%;
+				z-index: 1;
+			}
+		</style>
 	</head>
 	<body data-spy="scroll" data-target="#navbar-scrollspy" data-offset="150">
 		<div class="page-wrapper">
@@ -38,6 +68,9 @@
 									</button>
 									<div class="dropdown-menu">
 										<ul class="nav nav-pills">
+											<li class="nav-item">
+												<a class="nav-link" href="about-us.html">About Us</a>
+											</li>
 											<li class="nav-item">
 												<a class="nav-link" href="#feature">features</a>
 											</li>
@@ -63,6 +96,9 @@
 
 							<ul class="nav nav-pills desktop-nav float-xs-right">
 								<li class="nav-item">
+									<a class="nav-link" href="about-us.html">About Us</a>
+								</li>
+								<li class="nav-item">
 									<a class="nav-link" href="#feature">features</a>
 								</li>
 
@@ -83,6 +119,9 @@
 			</nav>
 			<header class="hero-section">
 				<div class="hero-overlay"></div>
+				<div class="video-wrapper">
+					<video src="assets/images/background-video.mov" autoplay loop></video> 
+				</div>
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -93,8 +132,8 @@
 								<p class="section-meta">
 									It’s easy. It’s online. And fun. 
 								</p>
-								<a href="support.html" class="btn primary-btn yellow-btn demo-request">
-									TRY A DEMO
+								<a href="mailto:support@studentnest.com" target="_blank" class="btn primary-btn yellow-btn demo-request">
+									Contact for DEMO
 								</a>
 							</div>
 						</div>
@@ -301,11 +340,11 @@
 											</div>
 											<div class="col-md-6">
 												<div class="box-container-block content-shdw-mod">
-													<img src="assets/images/img2.jpg" alt="" class="thumbnail rounded-circle">
+													<img src="assets/images/profile-male.png" alt="" class="thumbnail rounded-circle">
 													<h3 class="box-title">Lolita Fuller</h3>
 													<span class="meta-desc">principal at county school </span>
 													<p class="box-content text-sm-center">
-														Murrell's Farm and Boys Group Home utilized Studentness for two of our sites this past summer.  It was a great educational tool that was easy to utilize and surprisingly most of the youth seemed to like using it and they stated it was very easy once logged in...
+														Murrell's Farm and Boys Group Home utilized StudentNest for two of our sites this past summer.  It was a great educational tool that was easy to utilize and surprisingly most of the youth seemed to like using it and they stated it was very easy once logged in...
 
 													</p>
 												</div>
@@ -327,7 +366,7 @@
 							<div class="section-content-block partner-block">
 								<div class="section-header">
 									<h4 class="section-title">
-										Our Partner schools
+										Our Partner Districts
 									</h4>
 									<ul class="partners-listing">
 										<li class="partner-item">
@@ -493,9 +532,6 @@
 													<a href="about-us.html">About us</a>
 												</li>
 												<li class="items">
-													<a href="team.html">Our team</a>
-												</li>
-												<li class="items">
 													<a href="support.html">Contact</a>
 												</li>
 											</ul>
@@ -522,7 +558,10 @@
 											<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 											<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 										</ul>
-
+										
+									</div>
+									<div class="rkt-logo">
+										<img src="assets/images/rkt-logo.png" class="img-responsive" alt="rkt-logo">
 									</div>
 								</div>
 							</div>
