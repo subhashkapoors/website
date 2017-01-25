@@ -84,11 +84,15 @@ ul{
 	.mobile-nav{display: none;}
 	&.fill
 	{
-		background: #7B35AA;
+		background: #623acd;
 		transition: all 0.5s;
-		//		    background: #7b35aa;
+		//		    background: #623acd;
 	}
 
+}
+.img-responsive
+{
+	width:100%;
 }
 .hero-section{
 	background: url('../../images/background-image.png') center 0px / cover no-repeat;
@@ -101,7 +105,7 @@ ul{
 		left: 0;
 		width: 100%;
 		height: 90vh;
-		background: rgba(123, 53, 170, 0.89);
+		background: rgba(98,58,205,0.56); 
 	}
 	.section-content-block{
 		.section-title{
@@ -499,6 +503,10 @@ ul{
 		color: #fff;
 		opacity: 0.8;
 	}
+	.copyright-text {
+		padding: 50px 0px 50px;
+//		margin: -40px 0 0px;
+	}
 	.footer-listing
 	{
 		li
@@ -548,7 +556,14 @@ ul{
 
 	}
 }
-
+.rkt-logo
+{
+	display: inline-block;
+//    width: 180px;
+//    text-align: center;
+    margin: 30px auto 0;
+//	img{width:140px;}
+}
 .primary-btn{
 	@include btn(50px, #FFC80A, #4C4C4C, 12px, uppercase);
 	letter-spacing: 2px;
@@ -682,7 +697,7 @@ ul{
 /**********************************************About-us Page ******************************************************/
 .about-us-section
 {
-	padding: 150px 0 200px;
+	padding: 150px 0 0px;
 	h3
 	{
 		font-size: 38px;
@@ -707,13 +722,13 @@ ul{
 /**********************************************Team Page ******************************************************/
 .team-about
 {
-	padding-bottom: 0;
+	padding:50px 0 0px;
 	p{ text-align: center; margin-bottom: 65px; }
 }
 .team-section
 {
 	text-align: center;
-	padding-bottom: 90px;
+	padding-bottom: 200px;
 	.member-image
 	{
 		display: inline-block;
