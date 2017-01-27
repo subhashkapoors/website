@@ -6,6 +6,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'student-nest' !important;
@@ -90,25 +91,25 @@ ul {
 
 .navigation .nav-link {
   padding: .8em 1.5em;
-  color: #ffffff;
+  color: white;
   font-size: 13px;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  cursor: pointer !important;
+  cursor: pointer!important;
   transition: all 0.3s linear;
 }
 .navigation .nav-link.active, .navigation .nav-link:hover, .navigation .nav-link:focus {
   transition: all 0.35s linear;
   background: none;
-  color: #FFC80A;
+  color: #ffc80a;
   border-radius: 0;
   cursor: pointer;
 }
 .navigation .nav-link.active:hover, .navigation .nav-link.active:focus {
   background: none;
-  color: #ffffff;
+  color: white;
   border-radius: 0;
 }
 .navigation.top-nav-mod {
@@ -171,14 +172,14 @@ ul {
   font-size: 50px;
   font-weight: 300;
   line-height: 60px;
-  color: #ffffff;
+  color: white;
   text-transform: inherit;
 }
 .hero-section .section-content-block .section-meta {
   height: 74px;
   font-size: 22px;
   line-height: 74px;
-  color: #ffffff;
+  color: white;
 }
 .hero-section .demo-request {
   padding: 20px 50px;
@@ -219,7 +220,7 @@ ul {
   margin-top: 100px;
 }
 .section-block.promise-block-mod .box-container-block {
-  box-shadow: -1px 1px 0 #eee, -1px 0 0 #eee;
+  box-shadow: -1px 1px 0 #eeeeee, -1px 0 0 #eeeeee;
   height: 285px;
   box-sizing: border-box;
   margin: 1px 0;
@@ -229,7 +230,7 @@ ul {
   box-shadow: 0px 1px 0 #eee, 0px 0 0 #eee;
 }
 .section-block.promise-block-mod .box-container-block:nth-child(n+4) {
-  box-shadow: -1px 0px 0 #eee, 0px 0 0 #eee;
+  box-shadow: -1px 0px 0 #eeeeee, 0px 0 0 #eeeeee;
 }
 .section-block.promise-block-mod .box-container-block .box-title {
   font-size: 18px;
@@ -260,8 +261,8 @@ ul {
   justify-content: flex-start;
   align-items: center;
   border-radius: 0px;
-  background: #ffffff;
-  color: #2D4158;
+  background: white;
+  color: #2d4158;
   font-size: 18px;
   height: 200px;
   padding: 15px;
@@ -499,7 +500,7 @@ ul {
   background-color: #7B61D5;
 }
 .card-block:hover .card-title, .card-block:hover .card-desc, .card-block:hover .card-content {
-  color: #ffffff;
+  color: white;
   transition: background 0.5s linear;
 }
 
@@ -515,6 +516,9 @@ ul {
   justify-content: center;
   align-items: center;
   min-width: 240px;
+}
+.partner-block .partners-listing .partner-item img {
+  max-width: 150px;
 }
 
 .secondary-footer {
@@ -610,8 +614,8 @@ ul {
 
 .primary-btn {
   border-radius: 50px;
-  background: #FFC80A;
-  color: #4C4C4C;
+  background: #ffc80a;
+  color: #4c4c4c;
   font-size: 12px;
   text-transform: uppercase;
   cursor: pointer;
@@ -627,7 +631,7 @@ ul {
   box-shadow: 0 3px 0px #555;
 }
 .primary-btn:focus {
-  outline: none !important;
+  outline: none!important;
 }
 
 .user-auth-block .primary-btn {
@@ -779,6 +783,8 @@ ul {
   border-radius: 100%;
   overflow: hidden;
   margin: 40px auto 30px;
+  background: url(../../images/no-profile.png) no-repeat top center;
+  background-size: 140px;
 }
 .team-section .member-image.sunpreet {
   background: url(../../images/sunpreet.png) no-repeat top center;
@@ -790,9 +796,13 @@ ul {
 .team-section .member-image.sushil {
   background: url(../../images/sushil.jpg) no-repeat top center;
 }
+.team-section .member-image.zak {
+  background: url(../../images/zak-khan.jpg) no-repeat top center;
+  background-size: 145px;
+}
 .team-section .card {
   max-width: 350px;
-  margin: auto;
+  margin: 0 auto 50px;
   box-shadow: 0px 0px 10px 0px #dedede;
   border-radius: 2px;
 }
@@ -801,7 +811,7 @@ ul {
 }
 .team-section .card-block {
   border: 0;
-  height: 280px;
+  height: 345px;
 }
 .team-section .card-block:hover {
   background: transparent;
@@ -833,6 +843,9 @@ ul {
 /*************************************************END*********************************************************/
 .support-tutor-block {
   padding-bottom: 0;
+  /*background:  url(../../images/stuck-somewhere.jpg) no-repeat top center;
+  background-size:cover;
+  height:100vh;*/
 }
 .support-tutor-block img {
   width: 50%;
@@ -862,5 +875,29 @@ ul {
     max-width: 100%;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .team-section .card-block p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navigation .nav-link {
+    padding: .8em 10px;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .rkt-logo {
+    display: inline-block;
+    margin: 30px auto 0;
+    width: 100%;
+  }
+  .rkt-logo .img-responsive {
+    width: auto;
+  }
 
-/*# sourceMappingURL=style.css.map */
+  .navigation .nav-link.active:hover, .navigation .nav-link.active:focus {
+    color: #ffc80a;
+  }
+}

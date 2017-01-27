@@ -458,6 +458,7 @@ ul{
 		.partner-item{
 			@include flex-grid(row, center, center); 
 			min-width: 240px;
+			img{max-width:150px;}
 		}
 	}
 }
@@ -737,7 +738,8 @@ ul{
 		border-radius: 100%;
 		overflow: hidden;
 		margin: 40px auto 30px;
-
+		background: url(../../images/no-profile.png) no-repeat top center;
+		background-size: 140px;
 		&.sunpreet
 		{
 			background: url(../../images/sunpreet.png) no-repeat top center;
@@ -751,11 +753,16 @@ ul{
 		{
 			background: url(../../images/sushil.jpg) no-repeat top center;
 		}
+		&.zak
+		{ 
+			background: url(../../images/zak-khan.jpg) no-repeat top center;
+			    background-size: 145px;		
+		}
 	}
 	.card
 	{
 		max-width: 350px;
-		margin: auto;
+		margin: 0 auto 50px;
 		box-shadow: 0px 0px 10px 0px #dedede;
 		border-radius: 2px;
 		&:hover
@@ -766,7 +773,7 @@ ul{
 	.card-block
 	{
 		border: 0;
-		height: 280px;
+		height: 345px;
 		&:hover
 		{
 			background: transparent;
@@ -803,6 +810,9 @@ ul{
 .support-tutor-block
 {
 	padding-bottom: 0;
+	/*background:  url(../../images/stuck-somewhere.jpg) no-repeat top center;
+	background-size:cover;
+	height:100vh;*/
 	img{width: 50%;}
 	.section-title
 	{
@@ -828,5 +838,31 @@ ul{
 	.container {
 		width: 1280px;
 		max-width: 100%;
+	}
+	
+}
+@media only screen and (max-width: 1200px){
+	.team-section .card-block p {
+	    font-size: 14px;
+	    line-height: 22px;
+	}	
+}
+@media only screen and (max-width: 992px){
+	.navigation .nav-link {
+	    padding: .8em 10px;
+	    font-size: 10px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.rkt-logo {
+	    display: inline-block;
+	    margin: 30px auto 0;
+	    width: 100%;
+	    .img-responsive {
+		    width: auto;
+		}
+	}
+	.navigation .nav-link.active:hover, .navigation .nav-link.active:focus {
+	   color: #ffc80a;
 	}
 }

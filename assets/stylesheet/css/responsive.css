@@ -72,7 +72,7 @@
 }
 @media only screen and (max-width: 980px) {
   .section-block.promise-block-mod .box-container-block:nth-child(n+4) {
-    box-shadow: -1px 0 0 #eee, 0 0 0 #eee, 0 1px 0 #eee;
+    box-shadow: -1px 0 0 #eeeeee, 0 0 0 #eeeeee, 0 1px 0 #eeeeee;
   }
 
   .secondary-footer {
@@ -157,5 +157,3 @@
     float: none;
   }
 }
-
-/*# sourceMappingURL=responsive.css.map */
