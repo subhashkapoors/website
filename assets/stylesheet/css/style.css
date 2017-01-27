@@ -519,6 +519,7 @@ ul {
 }
 .partner-block .partners-listing .partner-item img {
   max-width: 150px;
+  height: auto;
 }
 
 .secondary-footer {
@@ -569,7 +570,7 @@ ul {
   opacity: 0.8;
 }
 .primary-footer .copyright-text {
-  padding: 50px 0px 50px;
+  padding: 0 0px 50px;
 }
 .primary-footer .footer-listing li a {
   font-size: 14px;
@@ -607,9 +608,12 @@ ul {
   padding-right: 0;
 }
 
-.rkt-logo {
+.student-nest-logo {
   display: inline-block;
   margin: 30px auto 0;
+}
+.student-nest-logo img {
+  margin-bottom: 40px;
 }
 
 .primary-btn {
@@ -802,7 +806,7 @@ ul {
 }
 .team-section .card {
   max-width: 350px;
-  margin: 0 auto 50px;
+  margin: 50px auto 0;
   box-shadow: 0px 0px 10px 0px #dedede;
   border-radius: 2px;
 }
@@ -843,9 +847,11 @@ ul {
 /*************************************************END*********************************************************/
 .support-tutor-block {
   padding-bottom: 0;
-  /*background:  url(../../images/stuck-somewhere.jpg) no-repeat top center;
-  background-size:cover;
-  height:100vh;*/
+  	/*background:  url(../../images/stuck-somewhere.jpg) no-repeat top center;
+  	background-size:cover;
+  
+  	height:100vh;*/
+  background-color: #efeff1;
 }
 .support-tutor-block img {
   width: 50%;
