@@ -441,6 +441,9 @@ video {
   width: 1000px;
   margin: auto;
 }
+.customer-block .section-content-block .section-title {
+  margin-top: 40px;
+}
 .customer-block .box-container-block {
   height: 300px;
   padding: 20px 15px;
