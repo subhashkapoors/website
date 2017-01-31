@@ -527,8 +527,9 @@ video {
 }
 .primary-footer
 {
+
 	background-color: #271F43;
-	padding: 80px 0 0;
+	padding: 0 0 0;
 	color: #fff;
 	p {
 		font-size: 13px;
@@ -546,6 +547,21 @@ video {
 		a{display:block; clear:both;}
 		img{margin-bottom:50px;}
 	}
+	.footer-logos{
+	    background: #fff;
+	    padding: 50px 0;
+	    width: 100%;
+	    display: inline-block;
+	    .other-logo
+	    {
+	    	float:right;
+	    }
+	}
+	.footer-bottom
+	{
+		padding: 50px 0 0;
+	}
+
 	.footer-listing
 	{
 		li

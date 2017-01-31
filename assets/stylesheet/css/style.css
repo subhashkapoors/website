@@ -595,7 +595,7 @@ video {
 
 .primary-footer {
   background-color: #271F43;
-  padding: 80px 0 0;
+  padding: 0 0 0;
   color: #fff;
 }
 .primary-footer p {
@@ -614,6 +614,18 @@ video {
 }
 .primary-footer .footer-logo img {
   margin-bottom: 50px;
+}
+.primary-footer .footer-logos {
+  background: #fff;
+  padding: 50px 0;
+  width: 100%;
+  display: inline-block;
+}
+.primary-footer .footer-logos .other-logo {
+  float: right;
+}
+.primary-footer .footer-bottom {
+  padding: 50px 0 0;
 }
 .primary-footer .footer-listing li a {
   font-size: 14px;
@@ -873,6 +885,7 @@ video {
   font-size: 20px;
   line-height: 27px;
   color: #000000;
+  text-transform: uppercase;
 }
 .team-section .card-block h6 {
   font-size: 12px;
