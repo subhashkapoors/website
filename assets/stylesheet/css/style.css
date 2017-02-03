@@ -872,7 +872,7 @@ video {
 }
 .team-section .card-block {
   border: 0;
-  height: 345px;
+  height: 320px;
 }
 .team-section .card-block:hover {
   background: transparent;
@@ -896,10 +896,11 @@ video {
 }
 .team-section .card-block p {
   padding: 15px 20px;
-  font-size: 16px;
-  text-align: center;
+  font-size: 15px;
+  text-align: left;
   line-height: 25px;
   color: #707894;
+  line-height: 1.6;
 }
 
 /*************************************************END*********************************************************/

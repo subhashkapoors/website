@@ -828,7 +828,7 @@ video {
 	.card-block
 	{
 		border: 0;
-		height: 345px;
+		 height: 320px;
 		&:hover
 		{
 			background: transparent;
@@ -854,10 +854,11 @@ video {
 		}
 		p{
 			padding: 15px 20px;
-			font-size: 16px;
-			text-align: center;
-			line-height: 25px;
-			color: #707894;
+		    font-size: 15px;
+		    text-align: left;
+		    line-height: 25px;
+		    color: #707894;
+		    line-height: 1.6;
 		}
 	}
 }
