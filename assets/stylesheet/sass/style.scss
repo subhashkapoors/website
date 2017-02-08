@@ -187,7 +187,7 @@ video {
 		}
 	}
 	&.promise-block-mod{
-		opacity: 0;
+		
 		padding-top: 0;
 		margin-top: 100px;
 		.box-container-block{
@@ -798,6 +798,7 @@ video {
 		&.sunpreet
 		{
 			background: url(../../images/sunpreet.png) no-repeat top center;
+			background-size:163px;
 		}
 		&.monica
 		{
@@ -810,7 +811,7 @@ video {
 		}
 		&.zak
 		{ 
-			background: url(../../images/zak-khan.jpg) no-repeat top center;
+			background: url(../../images/zak-khan.png) no-repeat top center;
 			    background-size: 145px;		
 		}
 	}

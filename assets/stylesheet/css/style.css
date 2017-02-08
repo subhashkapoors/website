@@ -248,7 +248,6 @@ video {
   margin-bottom: 65px;
 }
 .section-block.promise-block-mod {
-  opacity: 0;
   padding-top: 0;
   margin-top: 100px;
 }
@@ -849,6 +848,7 @@ video {
 }
 .team-section .member-image.sunpreet {
   background: url(../../images/sunpreet.png) no-repeat top center;
+  background-size: 163px;
 }
 .team-section .member-image.monica {
   background: url(../../images/monica.jpg) no-repeat top center;
@@ -858,7 +858,7 @@ video {
   background: url(../../images/sushil.jpg) no-repeat top center;
 }
 .team-section .member-image.zak {
-  background: url(../../images/zak-khan.jpg) no-repeat top center;
+  background: url(../../images/zak-khan.png) no-repeat top center;
   background-size: 145px;
 }
 .team-section .card {
