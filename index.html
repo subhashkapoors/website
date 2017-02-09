@@ -60,7 +60,7 @@
 									</div>
 								</div>
 							</div>
-<!-- 							<div class="user-auth-block float-xs-right">
+							<!-- <div class="user-auth-block float-xs-right">
 								<button class="btn primary-btn yellow-btn login-btn">
 									login
 								</button>
@@ -672,21 +672,17 @@ $(document).ready(function (){
 //Hero overlay height
 		</script>
 		<script>
-		if(window.location.contains("#features")) // This doesn't work, any suggestions?
-    {
-         alert("your url contains the name franky");
-    }
+		
 			$(document).ready(function(){
 				$(".hero-section .section-content-block").addClass("animated fadeIn");
-				var pageOffsetPromise = $(".promise-block-mod").offset().top;
+				$(window).scroll(function(){
+					var scroll = ($(window).scrollTop())+500;
+					var pageOffsetPromise = $(".promise-block-mod").offset().top;
 					var pageOffsetSlider = $(".slider-full-body").offset().top;
 					var pageOffsetCustomers = $(".customer-block").offset().top;
 					var pageOffsetNews = $(".news-block").offset().top;
 					var pageOffsetCorousel = $(".image-corousel").offset().top;
 					var pageOffsetFooter = $(".secondary-footer").offset().top;
-				$(window).scroll(function(){
-					var scroll = ($(window).scrollTop())+500;
-					
 					if (scroll > pageOffsetPromise)
 						{
 							$(".promise-block-mod").addClass("animated fadeIn");

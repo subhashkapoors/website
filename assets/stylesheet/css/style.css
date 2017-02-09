@@ -250,6 +250,7 @@ video {
 .section-block.promise-block-mod {
   padding-top: 0;
   margin-top: 100px;
+  opacity: 0;
 }
 .section-block.promise-block-mod .box-container-block {
   box-shadow: -1px 1px 0 #eeeeee, -1px 0 0 #eeeeee;
