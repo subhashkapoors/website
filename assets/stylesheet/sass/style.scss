@@ -532,6 +532,8 @@ video {
 	background-color: #271F43;
 	padding: 0 0 0;
 	color: #fff;
+	box-shadow: 0 0 8px -3px #888888;
+	-moz-box-shadow: 0 0 8px -5px #888888;	
 	p {
 		font-size: 13px;
 		padding: 20px 0;
