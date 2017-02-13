@@ -27,7 +27,7 @@
 	</head>
 	<body data-spy="scroll" data-target="#navbar-scrollspy" data-offset="150">
 		<div class="page-wrapper">
-			<nav class="nav navigation top-nav-mod">
+			<nav class="nav navigation top-nav-mod fill">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12" id="navbar-scrollspy">
@@ -578,6 +578,7 @@ Email/Phone Number - " class="btn primary-btn yellow-btn demo-request">
 		<script src="assets/jquery.bxslider/jquery.bxslider.min.js"></script>
 		<script>
 $(document).ready(function (){
+	$(".navigation").removeClass("fill");
 	 $('.bxslider').bxSlider();
 	$(window).scroll(function(){
 		var scroll = $(window).scrollTop();
@@ -672,7 +673,6 @@ $(document).ready(function (){
 //Hero overlay height
 		</script>
 		<script>
-		
 			$(document).ready(function(){
 				$(".hero-section .section-content-block").addClass("animated fadeIn");
 				$(window).scroll(function(){
