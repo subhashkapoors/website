@@ -27,6 +27,7 @@
 	</head>
 	<body data-spy="scroll" data-target="#navbar-scrollspy" data-offset="150">
 		<div class="page-wrapper">
+
 			<nav class="nav navigation top-nav-mod fill">
 				<div class="container">
 					<div class="row">
@@ -674,6 +675,7 @@ $(document).ready(function (){
 		</script>
 		<script>
 			$(document).ready(function(){
+				// $(".customer-block").fadeOut();
 				$(".hero-section .section-content-block").addClass("animated fadeIn");
 				$(window).scroll(function(){
 					var scroll = ($(window).scrollTop())+500;
@@ -694,7 +696,9 @@ $(document).ready(function (){
 						}
 					if (scroll > pageOffsetCustomers)
 						{
-							$(".customer-block").addClass("animated fadeIn");
+							$(".customer-block").animate({
+								opacity:1
+							});
 						}
 					if (scroll > pageOffsetNews)
 						{
