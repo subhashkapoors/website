@@ -856,6 +856,17 @@ video {
 .team-section .member-image.monica {
   background: url(../../images/monica.jpg) no-repeat top center;
   background-size: 140px;
+      background-position: 0px -18px;
+}
+.team-section .member-image.chander {
+  background: url(../../images/chander.jpg) no-repeat top center;
+  background-size: 140px;
+      background-position: 0px -18px;
+}
+.team-section .member-image.brad {
+  background: url(../../images/brad.jpg) no-repeat top center;
+  background-size: 140px;
+      background-position: 0px -18px;
 }
 .team-section .member-image.sushil {
   background: url(../../images/sushil.jpg) no-repeat top center;
