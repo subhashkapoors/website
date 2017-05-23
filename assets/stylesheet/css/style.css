@@ -626,6 +626,16 @@ video {
 .primary-footer .footer-logos .other-logo {
   float: right;
 }
+/* .left-logos{
+	display:inline-block;
+	margin-left:15px;
+}
+.left-logos:first-child{
+	margin-left:0;
+}
+.left-logos p, .right-logos p{
+	color: #000;
+} */
 .primary-footer .footer-bottom {
   padding: 50px 0 0;
 }
